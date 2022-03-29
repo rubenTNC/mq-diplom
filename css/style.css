@@ -579,7 +579,9 @@ img {
     justify-content: center;
     align-items: center;
     padding: 20px 15px;
-    display: none;    
+    display: none;
+    
+       
 }
 
 .close {
@@ -612,6 +614,7 @@ img {
     -moz-appearance: none;
     -webkit-appearance: none;
     background-image: url("../svg/form-arrows.svg");
+    background-color: #e0dcdc;
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: center right 10px;
@@ -673,6 +676,7 @@ img {
     margin-top: 10px;
     border: none;
     resize: none;
+    background-color: #e0dcdc;
     
 }
 
@@ -687,6 +691,8 @@ img {
         max-width: 360px;
         padding: 15px;
     }
+
+    
 
     /*WELCOME*/
 
