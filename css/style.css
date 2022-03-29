@@ -573,21 +573,19 @@ img {
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background-color: black;
-    z-index: 10;
-    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 15px;
-    display: none;
-    
+    display: none;    
 }
 
 .close {
     width: 20px;
     height: 20px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     background-image: url("../svg/form-x.svg");
     border: none;
     cursor: pointer;
@@ -599,9 +597,10 @@ img {
 .section-popup {
     position: relative;
     background-color: #fff;
-    opacity: 1;
     padding: 50px 30px;
     width: 390px;
+    opacity: none;
+    
 }
 
 
@@ -631,8 +630,13 @@ img {
     font-size: 13px;
 }
 
+.radio-group {
+    margin-top: 5px;
+}
+
 .radio {
-    display: block;
+    margin-right: 15px;
+    margin-top: 30px;
 }
 
 .input-radio {
@@ -668,6 +672,7 @@ img {
     padding: 15px;
     margin-top: 10px;
     border: none;
+    resize: none;
     
 }
 
