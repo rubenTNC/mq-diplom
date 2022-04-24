@@ -52,8 +52,31 @@ ul {
     align-items: center;
 }
 
-.menu-list {
-    display: none;
+
+
+.menu-link {
+    color: #fff;
+    font-size: 18px;
+}
+
+@media (max-width: 1201px) {
+    .menu {
+        position: relative;
+    }
+    .menu-list {
+        padding: 15px;
+        max-width: 500px;;
+        text-align: center;
+        border-radius: 20px;
+        position: absolute;
+        background-color: rgb(216, 142, 250);
+        right: -500px;
+        margin-top: 20px;
+        transition: 1s;
+    }
+}
+.menu-open .menu-list {
+    right: 0px;
 }
 
 .menu-link:hover {
@@ -68,6 +91,7 @@ ul {
 }
 
 .burger-menu {
+    cursor: pointer;
     position: relative;
     text-indent: -9999px;
     background: none;
