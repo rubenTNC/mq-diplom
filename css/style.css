@@ -55,28 +55,39 @@ ul {
 
 
 .menu-link {
-    color: #fff;
+    color: rgb(22, 20, 20);
+    font-weight: bolder;
     font-size: 18px;
 }
+
 
 @media (max-width: 1201px) {
     .menu {
         position: relative;
     }
     .menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .menu-list {
         padding: 15px;
-        max-width: 500px;
+        width: 300px;
+        height: 50vh;
         text-align: center;
         border-radius: 20px;
         position: absolute;
-        background-color: rgb(216, 142, 250);
-        right: -500px;
+        background-color: rgb(213, 248, 158);
+        right: 0px;
+        top: -500px;
+
         margin-top: 20px;
         transition: 1s;
     }
 }
 .menu-open .menu-list {
     right: 0px;
+    top: 20px;
 }
 
 .menu-link:hover {
