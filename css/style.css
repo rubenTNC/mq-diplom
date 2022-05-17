@@ -608,15 +608,19 @@ img {
     right: 0px;
     bottom: 0px;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 5;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    z-index: 5;
     padding: 20px 15px;
-    display: none;
-    
-       
+    display: flex;
+    transform: scale(0);
+    transition: 1s;
 }
+.open {
+    transform: scale(1);
+}
+
+
 
 .close {
     width: 20px;
